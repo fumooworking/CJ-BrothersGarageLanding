@@ -24,9 +24,3 @@ La landing page está desarrollada con **ReactJS** para una experiencia de usuar
 - **Tailwind CSS:** Para la gestión de estilos de manera ágil y eficiente.
 - **Vite:** Herramienta de desarrollo rápido para el proyecto.
 - **JavaScript (ES6+):** Utilizado para la lógica y funcionalidad del sitio.
-
-## Instalación y Configuración
-
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone https://github.com/tu-usuario/CJ-BrothersGarage.git
