@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html{
+  scrollbar-width: thin; 
+    scrollbar-color: rgb(83, 44, 7) rgba(255, 166, 0, 0);
+
+}
+
+@layer components {
+    /*Navbar*/
+    .custom-height {
+      height: calc(100%);
+      object-fit: cover;
+    }
+
+    .blurred-bg {
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px); 
+      }
+      h1,a{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+ 
+  }
+
+  @keyframes text-reveal {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .text-reveal-hover {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .text-reveal-hover::after {
+    content: attr(data-text);
+    display: inline-block;
+    animation: text-reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  
+  .text-reveal-hover:hover::after {
+    animation-play-state: running;
+  }
+  
+  .text-reveal-hover {
+    color: transparent;
+    position: relative;
+  }
+  
+  .text-reveal-hover::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+
+
+  

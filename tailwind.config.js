@@ -6,12 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      maxHeight: {
-        '0': '0',
-        'full': '100%',
-        'screen': '100vh',
-        '200': '200px',
-        '500': '500px',
+      maxWidth: {
+        'sm': '540px',
+        'custom': '650px',
+      },
+      fontSize: {
+        '32px': '32px',
+        '42px':'42px',
+        '64px':'64px'  
       },
       transitionProperty: {
         'max-height': 'max-height',
